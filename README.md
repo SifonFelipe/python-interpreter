@@ -16,6 +16,9 @@ This process involves several stages, including tokenization, parsing, and execu
 
 ## Stages of Interpretation
 
+### Visual
+<img width="333" height="1072" alt="interpreter" src="https://github.com/user-attachments/assets/35f3ab85-75ea-4cd8-8c21-06125cc80997" />
+
 ### Lexer (Tokenization)
 The first stage of the interpretation process is tokenization, which is performed by a component called the
 lexer. The lexer takes the raw source code as input and breaks it down into a sequence of tokens.
@@ -28,11 +31,14 @@ x = 10 + 5
 ```
 
 In this line of code, the lexer would produce the following tokens:
-- `x` IDENTIFIER
-- `=` EQUALS
-- `10` NUMBER
-- `+` PLUS
-- `5` NUMBER
+```
+- x   IDENTIFIER
+- =   EQUALS
+- 10  NUMBER
+- +   PLUS
+- 5   NUMBER
+NUMBER
+```
 
 Only classifies symbols, it does not understand the meaning.
 
