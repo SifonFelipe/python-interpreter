@@ -64,9 +64,7 @@ class Parser:
             self.consume()  # Consume the operator
             right = self.parse_factor()
 
-            left = ast.BinaryExpression(left, token.value, right)
-            # token.value is the operator string ('*' or '/')
-            # token.type is the token type (MULTIPLY or DIVIDE)
+            left = ast.BinaryExpression(left, token, right)
 
         return left
 
@@ -84,9 +82,7 @@ class Parser:
             self.consume()  # Consume the operator
             right = self.parse_term()
 
-            left = ast.BinaryExpression(left, token.value, right)
-            # token.value is the operator string ('+' or '-')
-            # token.type is the token type (PLUS or MINUS)
+            left = ast.BinaryExpression(left, token, right)
 
         return left
 

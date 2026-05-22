@@ -1,5 +1,6 @@
 from src import Lexer, Parser
 from src.tokens import UnexpectedTokenError
+from src.evaluator import Evaluator
 from src.tests import TestCase
 
 tests = [
@@ -35,13 +36,19 @@ def main():
         try:
             while True:
                 expression = parser.parse()
-                print(expression)
                 expressions.append(expression)
                 if expression is None:
                     break
 
         except UnexpectedTokenError as e:
             print(e)
+
+        print(expression)
+
+        evaluator = Evaluator()
+        print("\nEvaluation results:\n")
+        print(evaluator.evaluate(expression))
+
 
         input("\nPress Enter to continue to the next test...\n")
 
