@@ -37,7 +37,6 @@ In this line of code, the lexer would produce the following tokens:
 - 10  NUMBER
 - +   PLUS
 - 5   NUMBER
-NUMBER
 ```
 
 Only classifies symbols, it does not understand the meaning.
@@ -82,4 +81,11 @@ This is language logic.
 2 ways to execute the code:
 1. **Interpreter**: Directly executes the AST by traversing it and performing the corresponding
 2. **Compile**: Transforms the AST into machine code or bytecode that can be executed by the computer.
+
+
+## Complex Case Solved
+```python
+(2 + 3) * (10 - 4) / 2
+```
+
 

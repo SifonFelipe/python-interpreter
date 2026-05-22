@@ -4,8 +4,9 @@ from src.tests import TestCase
 
 tests = [
     TestCase("5 + 4"),
-    TestCase("5 + 4 * 3"),
-    TestCase("5 * 4 + 3"),
+    TestCase("(2 + 3) * (10 - 4) / 2"),
+    TestCase("(5 + 4) * 3"),
+    TestCase("5 * 3 * 4"),
     TestCase("x = 5 + 10"),
     TestCase("my_var = 20 - 4"),
     TestCase("hello123")
