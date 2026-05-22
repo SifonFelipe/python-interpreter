@@ -87,5 +87,6 @@ This is language logic.
 ```python
 (2 + 3) * (10 - 4) / 2
 ```
+<img width="951" height="674" alt="image" src="https://github.com/user-attachments/assets/f6bca17f-6f13-4b6c-8f95-ea90825704d5" />
 
 
